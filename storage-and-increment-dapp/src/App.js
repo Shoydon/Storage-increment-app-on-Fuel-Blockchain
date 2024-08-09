@@ -8,7 +8,7 @@ import {
 } from '@fuels/react';
 import { Contract } from 'fuels';
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import contractData from './contract.json'
 
 function App() {
@@ -27,6 +27,10 @@ function App() {
   fuel.on(fuel.events.connectors, (connectors) => {
       console.log("available connectors", connectors);
   });
+
+  fuel.on(fuel.events.connection, () => {
+    retrieveValue();
+  })
 
   const handleNewValue = (event) => {
       if(event.target.value >= 0){
@@ -79,10 +83,6 @@ function App() {
           setLoading(false);
       }
   };
-
-  useEffect(() => {
-      retrieveValue();
-  }, [])
 
   return (
       <div className="App" data-theme={theme}>

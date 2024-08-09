@@ -6,6 +6,8 @@ This is a simple dapp that allows users to increment the current value of the st
 
 There is no CSS implemented in this app since this app mostly explains how the functions and methods are implemented in javascript
 
+Hosted app link: [https://storage-and-increment-app-fuel.netlify.app/](https://storage-and-increment-app-fuel.netlify.app/)
+
 ## Smart contract writing process
 First, I wrote the smart contract in solidity and then used the transpiler provided in the Sway playground to convert it into its corresponding sway code and then deployed it on the testnet using my Fuel Wallet.
 
