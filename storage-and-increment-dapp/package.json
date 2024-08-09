@@ -1,11 +1,15 @@
 {
-  "name": "demo1",
+  "name": "storage-and-increment-dapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fuels/connectors": "^0.5.0",
+    "@fuels/react": "^0.20.0",
+    "@tanstack/react-query": "^5.51.23",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "fuels": "^0.93.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
